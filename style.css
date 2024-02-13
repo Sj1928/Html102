@@ -1,45 +1,37 @@
- body{
-    height: 100vh; Ensure the body fills the viewport
+*{
+    max-resolution: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh; /* Ensure the body fills the viewport */
     margin: 0;
-    background: #8000ff;
+    background-color: aqua;
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
-    
 
 }
 
-.envelope {
-    font-family: ;
-    display: inline-block;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #333;
-    border-radius: 10px;
-    overflow: hidden;
-    
-        font-family: "Zeyada", cursive;
-        font-weight: 400;
-        font-style: normal;
-      
+.wrapper{
+    height: 200px;
+    width: 300px;
+    background: #ffc9c9;
+    position: relative;
+    display: flex;
+    justify-content: center;s
+    z-index: 0;
+
 }
 
 .letter{
-    opacity: 100%;
-    animation: grow 2s forwards;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 2;
 }
 
-.letter {
-
-    font-size: 20px;
-    animation: grow 2s forwards; /* Animation duration: 2 seconds */
-}
-
-@keyframes grow {
-    from {
-        font-size: 10px; /* Initial size */
-    }
-    to {
-        font-size: 40px; /* Final size */
-    }
-}
