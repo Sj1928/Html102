@@ -1,37 +1,64 @@
-*{
-    max-resolution: 0;
-    padding: 0;
+body{
+height: 100%;
+width: fit-content;
+background: #000000;
+position: relative;
+padding: 0%;
 }
 
-body{
-    height: 100vh; /* Ensure the body fills the viewport */
-    margin: 0;
-    background-color: aqua;
+.nav{
+
+    height: 100px;
+    width: 100vw;
+    max-width: 99vw;
+    padding: 0%;
+    background: crimson;
     display: flex;
-    align-items: center;
     justify-content: center;
     align-items: center;
+}  
 
+.nav h1#navText1{
+    text-transform: uppercase;
+    font-family: poppins;
+    font-size: 4vw;
+    color: aliceblue;
+    font-weight: 500;
 }
 
-.wrapper{
-    height: 200px;
-    width: 300px;
-    background: #ffc9c9;
-    position: relative;
+.container{
+    height: 100%;
+    width: 100vw;
+    
+    max-width: 99vw;
+    padding: 0%;
     display: flex;
-    justify-content: center;s
-    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+}   
 
+h3#text1{
+    text-transform: uppercase;
+    font-family: poppins;
+    font-size: 3vw;
+    color: aliceblue;
+    font-weight: 700;
 }
 
-.letter{
-    position: absolute;
-    top: 0;
-    width: 80%;
-    height: 80%;
+input{
+    color: antiquewhite;
+    padding: 5px 25px;
+}
+
+button{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 2.5vw;
+    padding: 1vh 2.5vh;
     border-radius: 20px;
-    background-color: white;
-    z-index: 2;
+    margin-top: 10vh;
 }
-
